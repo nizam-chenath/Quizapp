@@ -1,0 +1,41 @@
+.container{
+    height: 100vh;
+    width: auto;
+    background-color: #D39FB0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    
+    .image-section img{
+        width: 445px;
+        height: 674px;
+        padding-left: 100px;
+    }
+    .button-section {
+         place-items: start;
+          margin-top: 100px;
+        
+        button{
+            width: 250px;
+            height: 60px; 
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border: none;
+            border-radius: 15px;
+            color: white;
+            margin: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            
+        }
+    }
+    .btn1{
+        background-color: #EBC580;
+      margin-top: 100px;
+    }
+    .btn2{
+        background-color: #436652;
+    }
+}
+.question{
+    background-color:#EBC580;
+}
