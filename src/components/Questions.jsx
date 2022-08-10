@@ -78,6 +78,7 @@ const handlesuffle = (optionss) =>{
             setQuestionNum={setQuestionNum}
             qnum={qnum}
             setqnum={setqnum}
+            correct={questions[questionNum]?.correct_answer}
             />
           :
           <div>

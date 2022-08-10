@@ -22,7 +22,8 @@ function App() {
   return (
     <div className="App">
       <Routes>
-       < Route path="/" element={<Home fetchQuestions={fetchQuestions} questionNum={questionNum} setQuestionNum={setQuestionNum}/>} />
+       < Route path="/" element={<Home fetchQuestions={fetchQuestions} questionNum={questionNum} setQuestionNum={setQuestionNum} score={score} setScore={setScore}/>} />
+      
        < Route path="/questions" element={<Questions
         fetchQuestions={fetchQuestions}
          questions={questions}

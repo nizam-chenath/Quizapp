@@ -13,9 +13,22 @@
     }
     .button-section {
          place-items: start;
-          margin-top: 100px;
+          
+          .questions ,.score{
+            width: 250px;
+            height: 60px; 
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            color: white;
+            font-weight: bold;
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+          }
         
         button{
+          
             width: 250px;
             height: 60px; 
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -79,7 +92,61 @@
                display: flex;
                place-items: center;
                justify-content: center;
+               color: white;
            }
+           .wrong{
+               background-color: red;
+               color: white;
+               
+           }
+           .select{
+               background-color: green;
+               color: white;
+           }
+           .next-btn{
+               padding: 20px;
+               width: 100px;
+               border: none;
+               border-radius: 10px;
+               color: white;
+               background-color: rgb(39, 25, 16);
+               font-weight: bold;
+           }
+        }
+    }
+}
+@media(max-width: 900px){
+    .container{
+        grid-template-rows:  1fr 1fr;
+        grid-template-columns: 1fr;
+        height: auto;
+        .image-section img{
+            width: 345px;
+            height: 590px;
+            padding-left: 0px;
+        }
+    }
+}
+@media(max-width: 1100px){
+    .question{
+        .question-section{
+            .questiondiv{
+                width: 300px;
+            }
+            .answeres{
+                .answer{
+                    width: 300px;
+                    height: 60px;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 500px){
+    .container{
+        .image-section img{
+            width: 200px;
+            height: 400px;
         }
     }
 }
