@@ -2,13 +2,13 @@ import React from 'react'
 import './style.scss'
 import {useNavigate} from 'react-router-dom'
 
-const Home = ({fetchQuestions}) => {
+const Score = ({fetchQuestions}) => {
   const navigate = useNavigate();
 
 
-  const questionsPage = () => {
+  const backToQuestions = () => {
       navigate('/questions');
-      fetchQuestions()
+      // fetchQuestions()
     
   }
   return (
@@ -18,7 +18,7 @@ const Home = ({fetchQuestions}) => {
              <img src="images/quizhome.png" alt="" />
           </div>
           <div className="button-section">
-          <button onClick={questionsPage} className="btn1">Start</button><br />
+          <button onClick={backToQuestions} className="btn1">Start</button><br />
           <button className="btn2">Reset</button>
           </div>
       </div>
@@ -26,4 +26,4 @@ const Home = ({fetchQuestions}) => {
   )
 }
 
-export default Home
+export default Score

@@ -38,4 +38,48 @@
 }
 .question{
     background-color:#EBC580;
+    color: white;
+    .question-section{
+        display: grid;
+        gap: 20px;
+        grid-template-rows: 1fr 1fr 4fr;
+        place-items: center;
+        font-size: 16px;
+        font-weight: bold;
+        .questionNumber{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: white;
+            display: grid;
+            place-items: center;
+            color: black;
+            font-size: 22px;
+        }
+        .questiondiv{
+            background-color: #C08697;
+            width: 500px;
+            height: auto;
+            border-radius: 15px;
+            display: grid;
+            place-items: center;
+            padding: 10px;
+        }
+        .answeres{
+            // display: grid;
+            // place-items: center;
+            
+           .answer{
+               width: 500px;
+               height: 70px;
+               border-radius: 15px;
+               background-color: #628274;
+               height: 70px;
+               margin: 10px 0;
+               display: flex;
+               place-items: center;
+               justify-content: center;
+           }
+        }
+    }
 }
