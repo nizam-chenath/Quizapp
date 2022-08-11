@@ -13,14 +13,14 @@ useEffect(()=>{
   console.log("qestions",questions)
   setOptions(
     questions && handlesuffle([
-      questions[questionNum].correct_answer,
-      ...questions[questionNum].incorrect_answers,
+      questions[questionNum]?.correct_answer,
+      ...questions[questionNum]?.incorrect_answers,
     ])
   )
 },[questions,questionNum]);
 
 const handlesuffle = (optionss) =>{
-    return optionss.sort(() => Math.random - 0.5)
+    return optionss.sort(() => Math.random() - 0.5)
 }
   // useEffect(()=>{
   //   async function getQuiz(){

@@ -115,6 +115,26 @@
         }
     }
 }
+a{
+    text-decoration: none;
+}
+.getInTouch{
+    font-size: 14px;
+    text-align: center;
+    background-color: rgb(197, 193, 193);
+    width: 130px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 2px 0.5px 5px  rgb(214, 213, 213);
+    color: white;
+    font-weight: bold;
+    // text-decoration: none;
+
+}
 @media(max-width: 900px){
     .container{
         grid-template-rows:  1fr 1fr;

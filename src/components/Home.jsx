@@ -1,6 +1,8 @@
 import React from 'react'
 import './style.scss'
 import {useNavigate} from 'react-router-dom'
+import {BsInstagram} from 'react-icons/bs'
+
 
 const Home = ({fetchQuestions,questionNum,score,setQuestionNum,setScore}) => {
   const navigate = useNavigate();
@@ -28,6 +30,11 @@ const Home = ({fetchQuestions,questionNum,score,setQuestionNum,setScore}) => {
           <button onClick={questionsPage} className="btn1">Start</button><br />
           <button onClick={resetAll} className="btn2">Reset</button>
           </div>
+           <a href="https://instagram.com/__nizam________/">
+
+         <p className="getInTouch">Connect to developer <BsInstagram/></p> 
+           </a>
+              
       </div>
     </>
   )
